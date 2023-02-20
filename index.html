@@ -13,12 +13,16 @@
         <h1 class="title">Etch-A-Sketch</h1>
     </header>
     <main>
-        <div class="buttons">
-            <button id="reset">Reset</button>
-            <button>Option 2</button>
+        <div class="Controls">
             <button>Option 3</button>
             <button>Option 4</button>
-        </div>
+            <button id="reset">Reset</button>
+            <div class="slider">
+                <input type="range" min="2" max="100" value="50" step="4" oninput="rangeValue.innerText = this.value">
+                <p id="rangeValue">Grid: 50 * 50</p>
+            </div>
+            
+        </div>         
         <div class="grid"></div>
     </main>
 </body>

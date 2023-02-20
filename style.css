@@ -16,7 +16,7 @@ main{
     margin: 20px 0px;
 }
 
-.buttons{
+.controls{
     margin: 0px 20px;
 }
 
@@ -61,3 +61,6 @@ button{
     background-color: white;
 }
 
+input[type="range"]{
+    accent-color: black;    
+}
