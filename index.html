@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -14,12 +14,14 @@
     </header>
     <main>
         <div class="Controls">
-            <button>Option 3</button>
-            <button>Option 4</button>
+            <input id="colorPick" type="color">
+            <button id="color">Color</button>
+            <button id="rainbow">Rainbow</button>
+            <button id="erase">Erase</button>
             <button id="reset">Reset</button>
             <div class="slider">
-                <input type="range" min="2" max="100" value="50" step="4" oninput="rangeValue.innerText = this.value">
-                <p id="rangeValue">Grid: 50 * 50</p>
+                <input type="range" min="2" max="64" value="20">
+                <p id="rangeValue">Grid</p>
             </div>
             
         </div>         
